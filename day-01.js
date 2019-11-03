@@ -36,7 +36,7 @@ function generateFullNames(count, firstNames, lastNames) {
  * @param  {string[]} fullNames - array of strings of full names
  * @description logs the given full names with serial numbers prefixes
  */
-function logWithSeriallNumbers(fullNames) {
+function logWithSerialNumbers(fullNames) {
   if (fullNames && fullNames.length) {
     const slNumberLength = String(fullNames.length).length;
     fullNames.forEach(function(name, i) {
@@ -50,11 +50,11 @@ function logWithSeriallNumbers(fullNames) {
 
 if (require.main === module) {
   const fullNames = generateFullNames(10, names.first, names.last);
-  logWithSeriallNumbers(fullNames);
+  logWithSerialNumbers(fullNames);
 }
 
 module.exports = {
   generateOneFullName,
   generateFullNames,
-  printNames: logWithSeriallNumbers
+  printNames: logWithSerialNumbers
 };
