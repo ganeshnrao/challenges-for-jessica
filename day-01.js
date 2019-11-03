@@ -56,5 +56,5 @@ if (require.main === module) {
 module.exports = {
   generateOneFullName,
   generateFullNames,
-  printNames: logWithSerialNumbers
+  logWithSerialNumbers
 };
