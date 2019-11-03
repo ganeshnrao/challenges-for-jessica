@@ -7,7 +7,6 @@ This repository is for you! I hope you will enjoy tackling these challenges and 
 3. All of the challenges here will be using Node. So you can run them easily in the terminal using the command `node` e.g. `node day-01.js` to run the first day&rsquo; challenge.
 4. Once you&rsquo;ve solved the challenge, or most of it, create a pull-request to the `master` branch.
 
-In the challenge files, above each function, you will see a comment specifying the function&rsquo;s  inputs and return values. You may not change these. Your task is to fill in the functions with code so that the returns the values as defined by the specification.
+In the challenge files, above each function, you will see a comment specifying the function&rsquo;s  inputs and return values. You may not change these. Your task is to fill in the functions with code so that it returns the value as defined in the specification.
 
-Love,
-:heart Ganesh
+❤︎ Ganesh
