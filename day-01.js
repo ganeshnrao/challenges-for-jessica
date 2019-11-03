@@ -11,6 +11,7 @@
 // 10. Arthur Frost
 
 const names = require("./assets/names.json");
+const { logWithSerialNumbers, runIfMain } = require("./assets/utils");
 
 /**
  * @param  {string[]} firstNames - array of strings of first names
@@ -29,32 +30,13 @@ function generateOneFullName(firstNames, lastNames) {
  */
 function generateFullNames(count, firstNames, lastNames) {
   // TODO: Implement
-  return [];
 }
 
-/**
- * @param  {string[]} fullNames - array of strings of full names
- * @description logs the given full names with serial numbers prefixes
- */
-function logWithSerialNumbers(fullNames) {
-  if (fullNames && fullNames.length) {
-    const slNumberLength = String(fullNames.length).length;
-    fullNames.forEach(function(name, i) {
-      const slNumber = String(i + 1).padStart(slNumberLength, "0");
-      console.log(`${slNumber}. ${name}`);
-    });
-  } else {
-    console.error(`{ No names given }`);
-  }
-}
-
-if (require.main === module) {
+runIfMain(module, function() {
   const fullNames = generateFullNames(10, names.first, names.last);
   logWithSerialNumbers(fullNames);
-}
+});
 
 module.exports = {
-  generateOneFullName,
-  generateFullNames,
-  logWithSerialNumbers
+  generateOneFullName
 };
