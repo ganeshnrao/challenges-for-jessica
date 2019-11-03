@@ -10,11 +10,11 @@ function generateId(length) {
 }
 
 runIfMain(module, function() {
-  console.log(generateId(16));
-  console.log(generateId(16));
-  console.log(generateId(16));
-  console.log(generateId(16));
-  console.log(generateId(16));
+  console.log(generateId(4));
+  console.log(generateId(8));
+  console.log(generateId());
+  console.log(generateId(24));
+  console.log(generateId(32));
 });
 
 module.exports = {
